@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/effectsize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/effectsize/effectsize_{{ version }}.tar.gz
-  sha256: 08431b2568e5ad899d8db0cd3d2fc7fa2e782a02ef09f813d4aa4ef4e6b2a735
+  sha256: 9c2b1383e5585c9eca2cb9d7f20cd6d4452034a08b2073e2870377e432ea31d2
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -42,13 +42,11 @@ test:
 about:
   home: https://github.com/easystats/effectsize
   license: GPL-3
-  summary: "Provide utilities to work with indices of effect size and standardized parameters
-    for a wide variety of models (see support list of insight; L\xFCdecke, Waggoner
-    & Makowski (2019) <doi:10.21105/joss.01412>), allowing computation and conversion
-    of indices such as Cohen's d, r, odds, etc."
+  summary: Provide utilities to work with indices of effect size and standardized parameters for a wide variety of models (see support list of insight; Lüdecke, Waggoner
+    & Makowski (2019) <doi:10.21105/joss.01412>), allowing computation and conversion of indices such as Cohen's d, r, odds, etc.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
