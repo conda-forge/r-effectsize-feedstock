@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/effectsize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/effectsize/effectsize_{{ version }}.tar.gz
-  sha256: da18c1659a9b1b2f61944156b28cff1d370ce92e68bcb4119bcf6a64105b1176
+  sha256: 3fe234c167af3beac46e01dbc9434db4f54e3816dbfc66aa8d5b819d3d5c17e6
 
 build:
   merge_build_host: true  # [win]
