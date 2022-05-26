@@ -26,18 +26,18 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-bayestestr >=0.10.5
-    - r-datawizard >=0.2.0
-    - r-insight >=0.14.3
-    - r-parameters >=0.14.0
-    - r-performance >=0.8.0
+    - r-bayestestr >=0.12.1
+    - r-datawizard >=0.4.1
+    - r-insight >=0.17.0
+    - r-parameters >=0.18.0
+    - r-performance >=0.9.0
   run:
     - r-base
-    - r-bayestestr >=0.10.5
-    - r-datawizard >=0.2.0
-    - r-insight >=0.14.3
-    - r-parameters >=0.14.0
-    - r-performance >=0.8.0
+    - r-bayestestr >=0.12.1
+    - r-datawizard >=0.4.1
+    - r-insight >=0.17.0
+    - r-parameters >=0.18.0
+    - r-performance >=0.9.0
 
 test:
   commands:
