@@ -1,11 +1,11 @@
-About r-effectsize
-==================
+About r-effectsize-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-effectsize-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/easystats/effectsize
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-effectsize-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provide utilities to work with indices of effect size and standardized parameters for a wide variety of models (see support list of insight; Lüdecke, Waggoner & Makowski (2019) <doi:10.21105/joss.01412>), allowing computation and conversion of indices such as Cohen's d, r, odds, etc.
 
