@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/effectsize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/effectsize/effectsize_{{ version }}.tar.gz
-  sha256: 78a9bfc9bf08dac424024475820ad73c3cd8895707bd3c3a04c000ca077de454
+  sha256: 38645ff1985461f386f7527b11a35ba946f27e047bfed95cf38f21e07247c52a
 
 build:
   number: 0
